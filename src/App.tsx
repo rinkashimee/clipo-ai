@@ -1,7 +1,11 @@
+import { Navbar } from '@/sections/Navbar/Navbar';
+import { Hero } from '@/sections/Hero/Hero';
+
 export const App = () => {
   return (
-    <div>
-      <h1>Clipo AI</h1>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+    </>
   );
 };
