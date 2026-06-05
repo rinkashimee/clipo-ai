@@ -4,7 +4,7 @@ import { Typography } from '@/components/ui/Typography';
 
 export function CTA() {
   return (
-    <section className="pt-24">
+    <section id="cta" className="pt-24">
       <Container>
         <div className="cta-card">
           <div className="cta-glow" />
