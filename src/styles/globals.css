@@ -44,6 +44,15 @@ body {
     padding-inline: 1.5rem;
   }
 
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+
+    background-color: rgba(11, 15, 25, 0.8);
+    backdrop-filter: blur(0.75rem);
+  }
+
   .nav-link {
     color: var(--gray-300);
     font-size: 1rem;
@@ -187,6 +196,84 @@ body {
     backdrop-filter: blur(1.25rem);
 
     transform: rotate(3deg);
+  }
+
+  .title-pill {
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+
+    padding-inline: 0.875rem;
+    padding-block: 0.5rem;
+
+    border-radius: var(--pill-radius);
+    background-color: rgba(124, 58, 237, 0.15);
+  }
+
+  .icon-container {
+    display: inline-flex;
+    width: 3.25rem;
+    height: 3.25rem;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0.875rem;
+    background: rgba(124, 58, 237, 0.14);
+    color: var(--primary);
+  }
+
+  .feature-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid var(--color-border-subtle);
+
+    background: var(--surface);
+    box-shadow: 0 0 30px 0 rgba(124, 58, 237, 0.15);
+
+    transition: all 300ms ease;
+  }
+
+  .feature-card:hover {
+    border-color: rgba(124, 58, 237, 0.35);
+    box-shadow: 0 0 1.875rem rgba(124, 58, 237, 0.12);
+    transform: translateY(-0.25rem);
+  }
+
+  .how-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    min-height: 18rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    border: 1px solid var(--color-border-subtle);
+
+    background: var(--surface);
+    box-shadow: 0 0 30px 0 rgba(124, 58, 237, 0.15);
+
+    transition: all 300ms ease;
+  }
+
+  .how-card:hover {
+    border-color: rgba(124, 58, 237, 0.35);
+    box-shadow: 0 0 1.875rem rgba(124, 58, 237, 0.12);
+    transform: translateY(-0.25rem);
+  }
+
+  .how-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: rgba(249, 250, 251, 0.2);
+    font-size: 1.25rem;
+    user-select: none;
   }
 
   .heading-xl {

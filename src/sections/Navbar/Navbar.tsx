@@ -6,7 +6,7 @@ import { NAVIGATION_ITEMS } from '@/data/navigations';
 
 export function Navbar() {
   return (
-    <header className="py-6">
+    <header className="navbar py-6">
       <Container>
         <nav className="flex items-center justify-between">
           <Typography as="span" variant="h3" color="white" cursor="pointer">
