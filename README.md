@@ -57,7 +57,3 @@ pnpm preview
 ✅ Mobile Responsive Complete
 
 🚀 Portfolio Project
-
-```
-
-```
