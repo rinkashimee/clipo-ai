@@ -29,7 +29,12 @@ export function CTA() {
               <Button variant="secondary">Watch Demo</Button>
             </div>
 
-            <Typography variant="body-s" color="gray-400" cursor="default">
+            <Typography
+              variant="body-s"
+              color="gray-400"
+              cursor="default"
+              className="trust-indicator"
+            >
               No credit card required • Cancel anytime
             </Typography>
           </div>

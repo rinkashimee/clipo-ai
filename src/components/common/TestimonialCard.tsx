@@ -30,7 +30,7 @@ export function TestimonialCard({ name, role, quote, avatar }: TestimonialCardPr
             {name}
           </Typography>
 
-          <Typography variant="body-s" color="gray-400">
+          <Typography variant="body-s" color="gray-400" className="position">
             {role}
           </Typography>
         </div>

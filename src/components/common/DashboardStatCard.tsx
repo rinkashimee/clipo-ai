@@ -12,7 +12,7 @@ export function DashboardStatCard({ label, value }: DashboardStatCardProps) {
         {label}
       </Typography>
 
-      <Typography as="h2" variant="h2" color="white" cursor="default">
+      <Typography as="h2" variant="h2" color="white" cursor="default" className="stat-value">
         {value}
       </Typography>
     </div>

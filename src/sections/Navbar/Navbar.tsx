@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { NavLink } from '@/components/ui/NavLink';
@@ -7,6 +9,8 @@ import { useActiveSection } from '@/hooks/useActiveSection';
 
 export function Navbar() {
   const activeSection = useActiveSection();
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="navbar py-6">
@@ -41,8 +45,26 @@ export function Navbar() {
             </div>
           </div>
 
-          <button className="text-[var(--white)] md:hidden">☰</button>
+          <button
+            className="mobile-menu-button md:hidden"
+            onClick={() => setIsMenuOpen((prev) => !prev)}
+            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+          >
+            {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
         </nav>
+
+        {isMenuOpen && (
+          <div className="mobile-menu-panel">
+            {NAVIGATION_ITEMS.map((item) => (
+              <NavLink key={item.href} href={item.href} onClick={() => setIsMenuOpen(false)}>
+                {item.label}
+              </NavLink>
+            ))}
+
+            <Button className="w-full">Start Free</Button>
+          </div>
+        )}
       </Container>
     </header>
   );

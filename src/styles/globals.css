@@ -69,6 +69,22 @@ body {
     color: var(--primary);
   }
 
+  .mobile-menu-button {
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background: transparent;
+    color: var(--white);
+
+    cursor: pointer;
+  }
+
+  .mobile-menu-panel {
+    display: none;
+  }
+
   .hero-layout {
     display: flex;
     align-items: center;
@@ -83,8 +99,23 @@ body {
     max-width: 39.375rem;
   }
 
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-top: 2rem;
+  }
+
+  .dashboard-preview {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .hero-dashboard {
     width: 39.375rem;
+    max-width: 100%;
     min-height: 31.875rem;
     padding: 1.5rem;
 
@@ -106,6 +137,15 @@ body {
 
     border-radius: var(--pill-radius);
     background-color: rgba(124, 58, 237, 0.15);
+  }
+
+  .dash-analytics {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding: 0.625rem;
   }
 
   .dashboard-stat-card {
@@ -797,6 +837,10 @@ body {
     font-size: 1rem;
   }
 
+  .dashboard-preview {
+    justify-content: center;
+  }
+
   .hero-dashboard {
     width: 38.75rem;
   }
@@ -846,10 +890,14 @@ body {
   }
 
   .qoute {
-    font-size: 0.875rem;
+    font-size: 1.125rem;
   }
 
   .profile {
+    font-size: 1rem;
+  }
+
+  .position {
     font-size: 0.875rem;
   }
 
@@ -867,5 +915,175 @@ body {
 
   .footer-desc {
     font-size: 0.875rem;
+  }
+
+  .scroll-top-btn {
+    right: 1.5rem;
+    bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-menu-button {
+    display: flex;
+  }
+
+  .mobile-menu-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    margin-top: 1.5rem;
+    padding: 1rem;
+
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 1rem;
+
+    background: var(--surface);
+  }
+
+  .nav-logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 0.875rem;
+  }
+
+  .btn-base {
+    height: 2.75rem;
+    font-size: 0.875rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 0.875rem;
+  }
+
+  .hero-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .hero-actions .btn-base {
+    width: 100%;
+  }
+
+  .dashboard-preview {
+    justify-content: center;
+  }
+
+  .hero-dashboard {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .dash-title {
+    font-size: 1.25rem;
+  }
+
+  .dash-active-pill {
+    font-size: 0.625rem;
+  }
+
+  .dash-analytics {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-value {
+    font-size: 2rem;
+  }
+
+  .generated-clip-card {
+    grid-template-columns: 1fr;
+  }
+
+  .floating-stat-card {
+    display: none;
+  }
+
+  .header-title {
+    font-size: 1.5rem;
+  }
+
+  .header-description {
+    font-size: 0.875rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .qoute {
+    font-size: 1rem;
+  }
+
+  .profile {
+    font-size: 0.875rem;
+  }
+
+  .position {
+    font-size: 0.875rem;
+  }
+
+  .cta-card {
+    gap: 1.75rem;
+    padding: 2.5rem;
+  }
+
+  .cta-title {
+    font-size: 1.5rem;
+  }
+
+  .cta-description {
+    max-width: 100%;
+    font-size: 0.875rem;
+  }
+
+  .cta-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .cta-actions .btn-base {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .trust-indicator {
+    font-size: 0.625rem;
+  }
+
+  .footer-section {
+    padding-top: 6.5rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 3rem;
+
+    padding: 2.5rem;
+  }
+
+  .footer-brand {
+    max-width: 100%;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.625rem;
+  }
+
+  .scroll-top-btn {
+    right: 1.5rem;
+    bottom: 1.5rem;
   }
 }

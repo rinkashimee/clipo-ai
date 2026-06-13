@@ -18,7 +18,7 @@ export function HeroContent() {
         and create ready-to-post clips in seconds.
       </Typography>
 
-      <div className="mt-8 flex items-center gap-4">
+      <div className="hero-actions">
         <Button>Start Free Trial</Button>
         <Button variant="secondary">Watch Demo</Button>
       </div>
