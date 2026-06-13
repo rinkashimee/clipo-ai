@@ -1,26 +1,63 @@
 # Clipo AI
 
-AI-powered landing page built with:
+Clipo AI is a modern SaaS landing page concept designed for content creators who want to transform long-form videos into engaging short-form clips using AI.
 
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
+This project was created as a portfolio piece to showcase responsive web design, component architecture, and modern frontend development practices.
 
-## Getting Started
+## Features
 
-```bash
-pnpm install
-pnpm start
-```
+- Responsive desktop, tablet, and mobile layouts
+- Reusable component-based architecture
+- AI-focused SaaS landing page design
+- Interactive navigation with active section tracking
+- Pricing, testimonials, and CTA sections
+- Scroll-to-top functionality
+- Modern dark UI with custom design system
 
 ## Tech Stack
 
 - React
 - TypeScript
 - Vite
-- Tailwind CSS
+- CSS Modules / Custom CSS
+- Lucide React
+
+## Getting Started
+
+Install dependencies:
+
+```bash
+pnpm install
+```
+
+Start the development server:
+
+```bash
+pnpm start
+```
+
+Build for production:
+
+```bash
+pnpm build
+```
+
+Preview the production build:
+
+```bash
+pnpm preview
+```
 
 ## Status
 
-🚧 In Development
+✅ Desktop Responsive Complete
+
+✅ Tablet Responsive Complete
+
+✅ Mobile Responsive Complete
+
+🚀 Portfolio Project
+
+```
+
+```
