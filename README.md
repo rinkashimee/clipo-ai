@@ -4,6 +4,10 @@ Clipo AI is a modern SaaS landing page concept designed for content creators who
 
 This project was created as a portfolio piece to showcase responsive web design, component architecture, and modern frontend development practices.
 
+## Live Demo
+
+https://clipo-ai-self.vercel.app/
+
 ## Features
 
 - Responsive desktop, tablet, and mobile layouts
@@ -19,7 +23,7 @@ This project was created as a portfolio piece to showcase responsive web design,
 - React
 - TypeScript
 - Vite
-- CSS Modules / Custom CSS
+- Custom CSS
 - Lucide React
 
 ## Getting Started
