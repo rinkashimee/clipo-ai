@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section id="hero" className="pt-24">
       <Container>
-        <div className="grid items-center gap-16 p-2.5 lg:grid-cols-2">
+        <div className="hero-layout">
           <HeroContent />
           <DashboardPreview />
         </div>

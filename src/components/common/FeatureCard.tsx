@@ -14,11 +14,17 @@ export function FeatureCard({ icon: Icon, title, description }: FeatureCardProps
         <Icon size={24} />
       </div>
 
-      <Typography as="h4" variant="h4" color="white" cursor="default">
+      <Typography
+        as="h4"
+        variant="h4"
+        color="white"
+        cursor="default"
+        className="feature-card-title"
+      >
         {title}
       </Typography>
 
-      <Typography variant="body-md" color="gray-400" cursor="default">
+      <Typography variant="body-md" color="gray-400" cursor="default" className="feature-card-desc">
         {description}
       </Typography>
     </article>

@@ -15,11 +15,11 @@ export function HowItWorksCard({ icon: Icon, title, description }: HowItWorksCar
         <Icon size={24} />
       </div>
 
-      <Typography as="h4" variant="h4" color="white" cursor="default">
+      <Typography as="h4" variant="h4" color="white" cursor="default" className="works-card-title">
         {title}
       </Typography>
 
-      <Typography variant="body-md" color="gray-400" cursor="default">
+      <Typography variant="body-md" color="gray-400" cursor="default" className="works-card-desc">
         {description}
       </Typography>
     </article>

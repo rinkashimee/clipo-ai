@@ -13,7 +13,7 @@ export function Navbar() {
       <Container>
         <nav className="flex items-center justify-between">
           <a href="#top">
-            <Typography as="span" variant="h3" color="white" cursor="pointer">
+            <Typography as="span" variant="h3" color="white" cursor="pointer" className="nav-logo">
               Clipo AI
             </Typography>
           </a>

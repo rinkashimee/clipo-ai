@@ -16,7 +16,7 @@ export function GeneratedClipCard() {
       </div>
 
       <div className="generated-clip-content">
-        <div className="flex items-center gap-3 px-4.5">
+        <div className="btn-content">
           <div className="tag-primary">
             <Typography variant="body-es" color="primary" cursor="default">
               AI Generated
@@ -38,7 +38,7 @@ export function GeneratedClipCard() {
           Automatically trimmed, captioned, and optimized for TikTok, Reels, and YouTube Shorts.
         </Typography>
 
-        <div className="mt-2 gap-1">
+        <div className="mt-2 w-full">
           <div className="flex items-center justify-between">
             <Typography variant="body-es" color="gray-300" cursor="default">
               AI Processing

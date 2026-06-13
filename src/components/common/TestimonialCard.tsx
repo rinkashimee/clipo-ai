@@ -18,7 +18,7 @@ export function TestimonialCard({ name, role, quote, avatar }: TestimonialCardPr
         ))}
       </div>
 
-      <Typography variant="body-md" color="white" cursor="default">
+      <Typography variant="body-md" color="white" cursor="default" className="qoute">
         {quote}
       </Typography>
 
@@ -26,7 +26,7 @@ export function TestimonialCard({ name, role, quote, avatar }: TestimonialCardPr
         <img src={avatar} alt={name} className="testimonial-avatar" />
 
         <div>
-          <Typography variant="body-md" color="white">
+          <Typography variant="body-md" color="white" className="profile">
             {name}
           </Typography>
 

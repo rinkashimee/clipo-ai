@@ -14,7 +14,7 @@ export function Pricing() {
             description="Choose the perfect plan for your content workflow and start creating viral clips faster with Clipo AI."
           />
 
-          <div className="grid gap-6 pt-14 lg:grid-cols-3 lg:items-center">
+          <div className="pricing-grid">
             {PRICING_PLANS.map((plan) => (
               <PricingCard key={plan.name} {...plan} />
             ))}

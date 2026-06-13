@@ -11,11 +11,22 @@ export function Footer() {
 
           <div className="footer-content">
             <div className="footer-brand">
-              <Typography as="h3" variant="h3" color="white" cursor="default">
+              <Typography
+                as="h3"
+                variant="h3"
+                color="white"
+                cursor="default"
+                className="footer-logo"
+              >
                 Clipo AI
               </Typography>
 
-              <Typography variant="body-md" color="gray-400" cursor="default">
+              <Typography
+                variant="body-md"
+                color="gray-400"
+                cursor="default"
+                className="footer-desc"
+              >
                 Turn long-form content into viral short-form videos with the power of AI.
               </Typography>
             </div>

@@ -15,7 +15,7 @@ export function Features() {
               short-form content."
           />
 
-          <div className="grid gap-5 pt-14 md:grid-cols-2 lg:grid-cols-4">
+          <div className="features-grid">
             {FEATURES.map((feature) => (
               <FeatureCard key={feature.title} {...feature} />
             ))}

@@ -10,7 +10,7 @@ export function CTA() {
           <div className="cta-glow" />
 
           <div className="cta-content">
-            <Typography as="h2" variant="h2" color="white" cursor="default">
+            <Typography as="h2" variant="h2" color="white" cursor="default" className="cta-title">
               Start Creating Viral Clips Today
             </Typography>
 

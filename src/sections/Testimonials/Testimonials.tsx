@@ -14,7 +14,7 @@ export function Testimonial() {
             description="Thousands of creators use Clipo AI to turn long-form content into viral short-form videos faster than ever."
           />
 
-          <div className="grid gap-6 pt-14 lg:grid-cols-3">
+          <div className="testimonial-grid">
             {TESTIMONIALS.map((testimonial) => (
               <TestimonialCard key={testimonial.name} {...testimonial} />
             ))}
