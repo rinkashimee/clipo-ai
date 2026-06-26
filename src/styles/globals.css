@@ -791,6 +791,45 @@ body {
     color: var(--white);
     transform: translateY(-2px);
   }
+
+  .demo-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+  }
+
+  .demo-modal-content {
+    position: relative;
+    width: min(960px, 100%);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background: var(--background);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .demo-modal-close {
+    position: absolute;
+    top: 12px;
+    right: 4px;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+  }
+
+  .demo-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+  }
 }
 
 @layer utilities {
