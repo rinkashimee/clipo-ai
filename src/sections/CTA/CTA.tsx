@@ -1,9 +1,13 @@
+import { VideoModal } from '@/components/modal/VideoModal';
 import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { Typography } from '@/components/ui/Typography';
 import { Play } from 'lucide-react';
+import { useState } from 'react';
 
 export function CTA() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <section id="cta" className="pt-24">
       <Container>
@@ -27,7 +31,7 @@ export function CTA() {
 
             <div className="cta-actions">
               <Button>Start Free Trail</Button>
-              <Button variant="secondary" icon={Play}>
+              <Button variant="secondary" icon={Play} onClick={() => setIsOpen(true)}>
                 Watch Demo
               </Button>
             </div>
@@ -43,6 +47,8 @@ export function CTA() {
           </div>
         </div>
       </Container>
+
+      <VideoModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
     </section>
   );
 }
