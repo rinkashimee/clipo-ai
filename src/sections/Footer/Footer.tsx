@@ -1,6 +1,7 @@
 import { Container } from '@/components/ui/Container';
 import { Typography } from '@/components/ui/Typography';
 import { FOOTER_COLUMNS } from '@/data/footer';
+import Logo from '@/assets/images/clipo-ai-logo.svg';
 
 export function Footer() {
   return (
@@ -11,18 +12,16 @@ export function Footer() {
 
           <div className="footer-content">
             <div className="footer-brand">
-              <Typography
-                as="h3"
-                variant="h3"
-                color="white"
-                cursor="default"
-                className="footer-logo"
-              >
-                Clipo AI
-              </Typography>
+              <a href="#top" className="logo-container">
+                <img src={Logo} alt="Clipo AI" className="footer-logo" />
+
+                <Typography as="span" variant="h5" color="white" cursor="pointer">
+                  Clipo AI
+                </Typography>
+              </a>
 
               <Typography
-                variant="body-md"
+                variant="body-s"
                 color="gray-400"
                 cursor="default"
                 className="footer-desc"

@@ -53,6 +53,18 @@ body {
     backdrop-filter: blur(0.75rem);
   }
 
+  .navbar-brand {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .navbar-brand-logo {
+    width: 3.625rem;
+    height: 3.938rem;
+    display: block;
+  }
+
   .nav-link {
     color: var(--gray-300);
     font-size: 1rem;
@@ -569,8 +581,17 @@ body {
     max-width: 25rem;
   }
 
-  .footer-brand p {
-    margin-top: 1rem;
+  .logo-container {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    margin-left: -1rem;
+  }
+
+  .footer-logo {
+    width: 3.375rem;
+    height: 3.375rem;
+    display: block;
   }
 
   .footer-links {
@@ -679,7 +700,7 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 1.5rem;
     line-height: 1.1;
-    font-weight: 500;
+    font-weight: 700;
   }
 
   .heading-5 {
@@ -816,8 +837,14 @@ body {
     max-width: 39.375rem;
   }
 
+  .navbar-brand-logo {
+    width: 3.375rem;
+    height: 3.375rem;
+    display: block;
+  }
+
   .nav-logo {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .nav-link {
@@ -909,10 +936,6 @@ body {
     font-size: 1rem;
   }
 
-  .footer-logo {
-    font-size: 1.5rem;
-  }
-
   .footer-desc {
     font-size: 0.875rem;
   }
@@ -942,8 +965,14 @@ body {
     background: var(--surface);
   }
 
+  .navbar-brand-logo {
+    width: 3.375rem;
+    height: 3.375rem;
+    display: block;
+  }
+
   .nav-logo {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .nav-link {

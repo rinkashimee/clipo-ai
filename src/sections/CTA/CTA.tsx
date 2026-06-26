@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { Typography } from '@/components/ui/Typography';
+import { Play } from 'lucide-react';
 
 export function CTA() {
   return (
@@ -26,7 +27,9 @@ export function CTA() {
 
             <div className="cta-actions">
               <Button>Start Free Trail</Button>
-              <Button variant="secondary">Watch Demo</Button>
+              <Button variant="secondary" icon={Play}>
+                Watch Demo
+              </Button>
             </div>
 
             <Typography

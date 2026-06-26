@@ -1,13 +1,21 @@
 import clsx from 'clsx';
+import type { LucideIcon } from 'lucide-react';
 import type { ButtonHTMLAttributes } from 'react';
 
 type ButtonVariant = 'primary' | 'secondary';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
+  icon?: LucideIcon;
 }
 
-export function Button({ variant = 'primary', className, children, ...props }: ButtonProps) {
+export function Button({
+  variant = 'primary',
+  icon: Icon,
+  className,
+  children,
+  ...props
+}: ButtonProps) {
   return (
     <button
       className={clsx(
@@ -20,6 +28,7 @@ export function Button({ variant = 'primary', className, children, ...props }: B
       )}
       {...props}
     >
+      {Icon && <Icon size={18} />}
       {children}
     </button>
   );

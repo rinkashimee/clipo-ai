@@ -6,6 +6,7 @@ import { NavLink } from '@/components/ui/NavLink';
 import { Typography } from '@/components/ui/Typography';
 import { NAVIGATION_ITEMS } from '@/data/navigations';
 import { useActiveSection } from '@/hooks/useActiveSection';
+import Logo from '@/assets/images/clipo-ai-logo.svg';
 
 export function Navbar() {
   const activeSection = useActiveSection();
@@ -16,8 +17,10 @@ export function Navbar() {
     <header className="navbar py-6">
       <Container>
         <nav className="flex items-center justify-between">
-          <a href="#top">
-            <Typography as="span" variant="h3" color="white" cursor="pointer" className="nav-logo">
+          <a href="#top" className="navbar-brand">
+            <img src={Logo} alt="Clipo AI" className="navbar-brand-logo" />
+
+            <Typography as="span" variant="h4" color="white" cursor="pointer" className="nav-logo">
               Clipo AI
             </Typography>
           </a>

@@ -1,11 +1,12 @@
 import { Button } from '@/components/ui/Button';
 import { Typography } from '@/components/ui/Typography';
+import { Play } from 'lucide-react';
 
 export function HeroContent() {
   return (
     <div className="hero-content">
       <Typography as="h1" variant="h1" color="white" cursor="default" className="hero-title">
-        Turn Long Videos Into Viral Shorts With AI
+        Turn Long Videos Into Viral Shorts Clips With AI
       </Typography>
 
       <Typography
@@ -20,7 +21,9 @@ export function HeroContent() {
 
       <div className="hero-actions">
         <Button>Start Free Trial</Button>
-        <Button variant="secondary">Watch Demo</Button>
+        <Button variant="secondary" icon={Play}>
+          Watch Demo
+        </Button>
       </div>
     </div>
   );
