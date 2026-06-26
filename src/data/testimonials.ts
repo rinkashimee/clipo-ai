@@ -1,6 +1,6 @@
-import SarahChen from '@/assets/images/sarah.png';
-import MarcusLee from '@/assets/images/marcus.png';
-import EmilyRodriguez from '@/assets/images/emily.png';
+import SarahChen from '@/assets/images/sarah.webp';
+import MarcusLee from '@/assets/images/marcus.webp';
+import EmilyRodriguez from '@/assets/images/emily.webp';
 
 export const TESTIMONIALS = [
   {

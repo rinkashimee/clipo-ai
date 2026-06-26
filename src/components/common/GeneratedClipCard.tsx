@@ -1,5 +1,5 @@
 import { Typography } from '../ui/Typography';
-import thumbnailPreview from '@/assets/images/thumbnail-preview.png';
+import thumbnailPreview from '@/assets/images/thumbnail-preview.webp';
 import { FloatingStatCard } from './FloatingStatCard';
 
 export function GeneratedClipCard() {
