@@ -20,7 +20,7 @@ export function VideoModal({ isOpen, onClose }: DemoModalProps) {
         </video> */}
         <iframe
           className="demo-video"
-          src="https://www.youtube.com/embed/r4zCaHTxuzQ?autoplay=1"
+          src=""
           title="Clipo AI Demo"
           allow="autoplay; encrypted-media; picture-in-picture"
           allowFullScreen
